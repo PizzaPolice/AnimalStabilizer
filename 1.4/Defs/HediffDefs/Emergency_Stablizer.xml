@@ -1,0 +1,70 @@
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>EmergencyStabilizer</defName>
+    <label>emergency stabilizer system</label>
+    <labelNoun>an emergency stabilizer system</labelNoun>
+    <description>An installed emergency stabilizer system.</description>
+    <descriptionHyperlinks><ThingDef>EmergencyStabilizer</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>EmergencyStabilizerSystem</spawnThingOnRemoved>
+    <comps>
+      <li Class="HediffCompProperties_DissolveGearOnDeath">
+        <fleck>AcidCloud</fleck>
+        <moteCount>6</moteCount>
+        <moteOffsetRange>0.25~0.75</moteOffsetRange>
+        <filth>Filth_Slime</filth>
+        <sound>DeathAcidifier</sound>
+        <injuryCreatedOnDeath>ChemicalBurn</injuryCreatedOnDeath>
+        <injuryCount>3~6</injuryCount>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBase">
+    <defName>EmergencyStabilizer</defName>
+    <label>emergency stabilizer system</label>
+    <description>A whole body implant that upon being downed puts the carrier in a crypto-sleep like stasis, stemming bleeding. This stasis stems bleeding but downs the pawn until stasis is ended over time, granting time to patch wounds and get the user to safety. Causes mental side effects when used in sapient creatures.</description>
+    <descriptionHyperlinks><RecipeDef>InstallDeathAcidifier</RecipeDef></descriptionHyperlinks>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(189,169,118)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>400</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallEmergencyStabilizer</defName>
+    <label>install emergency stablizer system</label>
+    <description>Install a death acidifier.</description>
+    <descriptionHyperlinks>
+      <ThingDef>EmergencyStabilizer</ThingDef>
+      <HediffDef>EmergencyStabilizer</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing emergency stabilizer system.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmergencyStabilizer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>EmergencyStabilizer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Whole Body</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EmergencyStabilizer</addsHediff>
+  </RecipeDef>
