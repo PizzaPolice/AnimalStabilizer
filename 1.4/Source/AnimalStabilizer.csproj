@@ -7,6 +7,7 @@
   </PropertyGroup>
 
 
+  <!-- Change these links to wherever you put your copies of the Rimworld and Unity DLLs.-->
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
         <HintPath>/mnt/hdd/repos/Mods/RimworldBinaries/Assembly-CSharp.dll</HintPath>

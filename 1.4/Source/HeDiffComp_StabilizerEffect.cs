@@ -8,6 +8,7 @@ public class HediffComp_StabilizerEffect : HediffComp
 
     public override void CompPostTick(ref float severityAdjustment)
     {
+        Log.Message("YAYAYAYAYAYYYA");
 	    
     }
 }
