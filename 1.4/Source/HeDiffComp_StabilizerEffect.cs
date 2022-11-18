@@ -9,7 +9,15 @@ namespace AnimalStabilizer
 
         public override void CompPostTick(ref float severityAdjustment)
         {
-            Log.Error("THE DEF IS" + Props.StabilizerDurationInTicks);
+            //Only check every 250 ticks (rare tick)
+            if(Find.TickManager.TicksGame % 250 != 0) {
+                return;
+            }
+
+            if(Pawn.Downed) {
+                Pawn.health.AddHediff(HediffDefOf.FoodPoisoning);
+                Log.Error("MAN DOWN MAN DOWN");
+            }
 
         }
     }
