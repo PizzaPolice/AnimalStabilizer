@@ -65,6 +65,7 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
       <li>Torso</li>
+      <li>Body</li>
     </appliedOnFixedBodyParts>
     <addsHediff>EmergencyStabilizer</addsHediff>
   </RecipeDef>
