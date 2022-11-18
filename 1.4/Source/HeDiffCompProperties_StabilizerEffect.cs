@@ -2,11 +2,13 @@ using RimWorld;
 using Verse;
 
 
-namespace AnimalStabilizer;
-public class HediffCompProperties_StabilizerEffect : HediffCompProperties
+namespace AnimalStabilizer
 {
-	public HediffCompProperties_StabilizerEffect()
-	{
-		compClass = typeof(HediffComp_StabilizerEffect);
-	}
+    public class HediffCompProperties_StabilizerEffect : HediffCompProperties
+    {
+        public HediffCompProperties_StabilizerEffect()
+        {
+            compClass = typeof(HediffComp_StabilizerEffect);
+        }
+    }
 }

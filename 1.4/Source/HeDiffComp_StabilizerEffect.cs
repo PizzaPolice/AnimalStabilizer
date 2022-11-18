@@ -1,14 +1,16 @@
 using RimWorld;
 using Verse;
 
-namespace AnimalStabilizer;
-public class HediffComp_StabilizerEffect : HediffComp
+namespace AnimalStabilizer
 {
-	public HediffCompProperties_StabilizerEffect Props => (HediffCompProperties_StabilizerEffect)props;
-
-    public override void CompPostTick(ref float severityAdjustment)
+    public class HediffComp_StabilizerEffect : HediffComp
     {
-        Log.Message("YAYAYAYAYAYYYA");
-	    
+        public HediffCompProperties_StabilizerEffect Props => (HediffCompProperties_StabilizerEffect)props;
+
+        public override void CompPostTick(ref float severityAdjustment)
+        {
+            Log.Message("YAYAYAYAYAYYYA");
+
+        }
     }
 }
