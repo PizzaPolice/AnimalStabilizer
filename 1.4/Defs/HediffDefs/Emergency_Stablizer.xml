@@ -9,14 +9,7 @@
     <descriptionHyperlinks><ThingDef>EmergencyStabilizer</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>EmergencyStabilizer</spawnThingOnRemoved>
     <comps>
-      <li Class="HediffCompProperties_DissolveGearOnDeath">
-        <fleck>AcidCloud</fleck>
-        <moteCount>6</moteCount>
-        <moteOffsetRange>0.25~0.75</moteOffsetRange>
-        <filth>Filth_Slime</filth>
-        <sound>DeathAcidifier</sound>
-        <injuryCreatedOnDeath>ChemicalBurn</injuryCreatedOnDeath>
-        <injuryCount>3~6</injuryCount>
+      <li Class="HediffCompProperties_StabilizerEffect">
       </li>
     </comps>
   </HediffDef>
