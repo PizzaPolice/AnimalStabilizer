@@ -37,6 +37,13 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
     <thingCategories>
       <li>BodyPartsBionic</li>
     </thingCategories>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
   <RecipeDef ParentName="SurgeryInstallImplantBase">
@@ -69,5 +76,48 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
     </appliedOnFixedBodyParts>
     <addsHediff>EmergencyStabilizer</addsHediff>
   </RecipeDef>
+
+
+
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>Stabilization</defName>
+    <label>stabilization</label>
+    <labelNoun>the effects of an activated stabilizer</labelNoun>
+    <description>Stabilizer ONLINE.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.2</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      <minSeverity>.8</minSeverity>
+      <label>Activated</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+        <totalBleedFactor>0.1</totalBleedFactor>
+      </li>
+      <li>
+      <minSeverity>0</minSeverity>
+      <label>Recovery</label>
+        <statOffsets>
+          <GlobalLearningFactor>-0.8</GlobalLearningFactor>
+        </statOffsets>
+        <capMods>
+        <li>
+        <capacity>Consciousness</capacity>
+        <offset>-0.2</offset>
+        </li>
+        </capMods>
+
+      </li>
+    </stages>
+  </HediffDef>
+
 
 </Defs>
