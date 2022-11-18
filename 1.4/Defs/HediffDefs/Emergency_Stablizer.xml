@@ -1,10 +1,10 @@
   <HediffDef ParentName="ImplantHediffBase">
     <defName>EmergencyStabilizer</defName>
     <label>emergency stabilizer</label>
-    <labelNoun>an emergency stabilizer system</labelNoun>
-    <description>An installed emergency stabilizer system.</description>
+    <labelNoun>an emergency stabilizer</labelNoun>
+    <description>An installed emergency stabilizer.</description>
     <descriptionHyperlinks><ThingDef>EmergencyStabilizer</ThingDef></descriptionHyperlinks>
-    <spawnThingOnRemoved>EmergencyStabilizerSystem</spawnThingOnRemoved>
+    <spawnThingOnRemoved>EmergencyStabilizer</spawnThingOnRemoved>
     <comps>
       <li Class="HediffCompProperties_DissolveGearOnDeath">
         <fleck>AcidCloud</fleck>
@@ -20,10 +20,12 @@
 
   <ThingDef ParentName="BodyPartBase">
     <defName>EmergencyStabilizer</defName>
-    <label>emergency stabilizer system</label>
-    <description>An implant that violently forces the body into a cryptobiotic state when the patient is incapacitated, slowing blood loss and shutting down non-vital-brain functions. 
+    <label>emergency stabilizer</label>
+    <description>A lifesaving implant that violently forces the body into a cryptobiotic state when the patient is incapacitated, shutting down or slowing all biological functions, and allowing more time to save the patient from disease or blood loss.
 
-The shock of being forced into cryptosleep causes severe disruption in higher brain functions for a time afterwards. Though the effects are temporary, they are primarily used on animals for this reason.</description>
+The shock of being forced into cryptosleep causes severe disruption in higher brain functions for a time afterwards. Though this disruption is temporary, they are used primarily on non-sentient creatures for this reason. 
+
+On urbworlds, they are used overwhelmingly to protect the lives of showfighting animals.</description>
     <descriptionHyperlinks><RecipeDef>InstallDeathAcidifier</RecipeDef></descriptionHyperlinks>
     <techLevel>Spacer</techLevel>
     <graphicData>
