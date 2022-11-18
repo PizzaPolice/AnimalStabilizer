@@ -9,7 +9,7 @@ namespace AnimalStabilizer
 
         public override void CompPostTick(ref float severityAdjustment)
         {
-            Log.Message("YAYAYAYAYAYYYA");
+            Log.Error("YAYAYAYAYAYYYA");
 
         }
     }
