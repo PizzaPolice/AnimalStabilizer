@@ -9,7 +9,7 @@
     <descriptionHyperlinks><ThingDef>EmergencyStabilizer</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>EmergencyStabilizer</spawnThingOnRemoved>
     <comps>
-      <li Class="AnimalStabilizer.HediffCompProperties_AnimalStabilizer">
+      <li Class="AnimalStabilizer.HediffCompProperties_StabilizerEffect">
         <StabilizerDurationInTicks>999999</StabilizerDurationInTicks>
       </li>
     </comps>
