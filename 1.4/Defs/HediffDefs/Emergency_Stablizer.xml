@@ -9,7 +9,8 @@
     <descriptionHyperlinks><ThingDef>EmergencyStabilizer</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>EmergencyStabilizer</spawnThingOnRemoved>
     <comps>
-      <li Class="HediffCompProperties_StabilizerEffect">
+      <li>
+                <compClass>AnimalStabilizer.HediffCompProperties_StabilizerEffect</compClass>
       </li>
     </comps>
   </HediffDef>
