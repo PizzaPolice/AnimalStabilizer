@@ -9,7 +9,7 @@ namespace AnimalStabilizer
 
         public override void CompPostTick(ref float severityAdjustment)
         {
-            Log.Error("YAYAYAYAYAYYYA");
+            Log.Error("THE DEF IS" + Props.StabilizerDurationInTicks);
 
         }
     }
