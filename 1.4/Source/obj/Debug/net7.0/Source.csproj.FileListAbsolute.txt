@@ -1,0 +1,5 @@
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Debug/net7.0/Source.csproj.AssemblyReference.cache
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Debug/net7.0/Source.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Debug/net7.0/Source.AssemblyInfoInputs.cache
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Debug/net7.0/Source.AssemblyInfo.cs
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Debug/net7.0/Source.csproj.CoreCompileInputs.cache

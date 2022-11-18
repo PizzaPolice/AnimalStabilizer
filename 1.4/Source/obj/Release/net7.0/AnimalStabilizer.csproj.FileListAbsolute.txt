@@ -1,0 +1,14 @@
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Release/net7.0/AnimalStabilizer.csproj.AssemblyReference.cache
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Release/net7.0/AnimalStabilizer.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Release/net7.0/AnimalStabilizer.AssemblyInfoInputs.cache
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Release/net7.0/AnimalStabilizer.AssemblyInfo.cs
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Release/net7.0/AnimalStabilizer.csproj.CoreCompileInputs.cache
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/bin/Release/net7.0/AnimalStabilizer.deps.json
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/bin/Release/net7.0/AnimalStabilizer.dll
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/bin/Release/net7.0/AnimalStabilizer.pdb
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/bin/Release/net7.0/Assembly-CSharp.dll
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Release/net7.0/AnimalStabilizer.csproj.CopyComplete
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Release/net7.0/AnimalStabilizer.dll
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Release/net7.0/refint/AnimalStabilizer.dll
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Release/net7.0/AnimalStabilizer.pdb
+/mnt/hdd/repos/Mods/AnimalStabilizer/1.4/Source/obj/Release/net7.0/ref/AnimalStabilizer.dll
