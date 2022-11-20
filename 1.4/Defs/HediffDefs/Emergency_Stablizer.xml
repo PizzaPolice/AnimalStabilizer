@@ -81,10 +81,10 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
 
 
   <HediffDef ParentName="DiseaseBase">
-    <defName>Stabilization</defName>
-    <label>stabilization</label>
-    <labelNoun>the effects of an activated stabilizer</labelNoun>
-    <description>Stabilizer ONLINE.</description>
+    <defName>Cryptobiotic Lockdown</defName>
+    <label>cryptobiotic lockdown</label>
+    <labelNoun>cryptobiotic lockdown</labelNoun>
+    <description>All biological functions have been reduced to their lowest possible level outside of a cryptosleep pod. Without a cryptosleep pod to maintain this state, the body will begin to recover functionality within a few days.</description>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.2</severityPerDay>
