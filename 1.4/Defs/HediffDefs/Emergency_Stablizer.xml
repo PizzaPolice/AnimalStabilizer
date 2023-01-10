@@ -45,9 +45,6 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
       <Plasteel>15</Plasteel>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
-    <recipeMaker>
-      <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
-    </recipeMaker>
   </ThingDef>
 
   <RecipeDef ParentName="SurgeryInstallImplantBase">
