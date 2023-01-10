@@ -20,11 +20,13 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>EmergencyStabilizer</defName>
     <label>emergency stabilizer</label>
-    <description>A lifesaving implant that violently forces the body into a cryptobiotic state when the patient is incapacitated, slowing down blood flow and allowing more time to save the patient from their injuries.
+    <description>A lifesaving implant that violently forces the body into a cryptobiotic state when the patient is incapacitated and bleeding heavily, slowing down blood flow and allowing more time to save the patient from their injuries.
 
 The shock of being forced into cryptosleep causes severe disruption in higher order brain functions for a time afterwards. They are used primarily on non-sentient creatures for this reason. 
 
-On urbworlds, they are used mainly to prolong the lives of showfighting animals.</description>
+On urbworlds, they are used mainly to prolong the lives of showfighting animals.
+
+Triggers when a pawn is downed and bleeding to death in less than 12 hours</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallEmergencyStabilizer</RecipeDef>
     </descriptionHyperlinks>
