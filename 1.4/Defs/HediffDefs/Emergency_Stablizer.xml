@@ -81,7 +81,7 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
 
 
   <HediffDef ParentName="DiseaseBase">
-    <defName>Cryptobiotic Stabilization</defName>
+    <defName>EmergencyStabilization</defName>
     <label>stabilization</label>
     <labelNoun>the effects of an activated stabilizer</labelNoun>
     <description>The effects of an activated Emergency Stabilizer. Bleeding is slowed down for approximately half a day, after which the user will experience a five day recovery period with severe penalties to higher level brain functions.
@@ -105,7 +105,7 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
     <stages>
       <li>
       <minSeverity>0</minSeverity>
-      <label>Recovery</label>
+      <label>Recovering</label>
         <statOffsets>
           <GlobalLearningFactor>-0.8</GlobalLearningFactor>
         </statOffsets>
