@@ -26,7 +26,7 @@ The shock of being forced into cryptosleep causes severe disruption in higher or
 
 On urbworlds, they are used mainly to prolong the lives of showfighting animals.</description>
     <descriptionHyperlinks>
-      <HediffDef>EmergencyStabilizer</HediffDef>
+      <RecipeDef>InstallEmergencyStabilizer</RecipeDef>
     </descriptionHyperlinks>
     <techLevel>Spacer</techLevel>
     <graphicData>
