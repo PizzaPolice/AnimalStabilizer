@@ -1,8 +1,10 @@
-# AnimalStabilizer
+# Animal Stabilizer
 
 A Mod for Rimworld that adds an implant that forces a pawn into a cryptosleep-like state when they reach critical condition, giving you more time to stop bleeding or respond to time-sensitve trauma.
   
 Primarily meant for animals, so you don't have to play Trauma Team on Emergency mode every time your combat animals get downed. It has a number of cognitive consequences when used on a sapient pawn.
+
+The Emergency Stabilizer is unlocked with the bionic replacements technology and made with similar components to normal bionics
 
   
 This Mod is Open Source, if you wish to help add new features, fix bugs, or add translations, please contact me and make a pull request.
