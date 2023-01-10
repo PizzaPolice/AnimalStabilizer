@@ -6,7 +6,8 @@ namespace AnimalStabilizer
 {
     public class HediffCompProperties_StabilizerEffect : HediffCompProperties
     {
-        public int StabilizerDurationInTicks;
+        public int BleedToDeathTicksActivationThreshold;
+
 
         public HediffCompProperties_StabilizerEffect()
         {

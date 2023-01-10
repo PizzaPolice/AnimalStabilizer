@@ -10,7 +10,9 @@
     <spawnThingOnRemoved>EmergencyStabilizer</spawnThingOnRemoved>
     <comps>
       <li Class="AnimalStabilizer.HediffCompProperties_StabilizerEffect">
-        <StabilizerDurationInTicks>999999</StabilizerDurationInTicks>
+        <!-- How quickly a pawn must be bleeding to death before the stabilizer will activate when downed-->
+        <!-- 12 hours by default -->
+        <BleedToDeathTicksActivationThreshold>30000</BleedToDeathTicksActivationThreshold>
       </li>
     </comps>
   </HediffDef>
@@ -20,10 +22,13 @@
     <label>emergency stabilizer</label>
     <description>A lifesaving implant that violently forces the body into a cryptobiotic state when the patient is incapacitated, shutting down or slowing all biological functions, and allowing more time to save the patient from disease or blood loss.
 
-The shock of being forced into cryptosleep causes severe disruption in higher brain functions for a time afterwards. Though this disruption is temporary, they are used primarily on non-sentient creatures for this reason. 
+The shock of being forced into cryptosleep causes severe disruption in higher brain functions for a time afterwards. They are used primarily on non-sentient creatures for this reason. 
 
 On urbworlds, they are used mainly to prolong the lives of showfighting animals.</description>
-    <descriptionHyperlinks><RecipeDef>InstallDeathAcidifier</RecipeDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>EmergencyStabilizer</ThingDef>
+      <HediffDef>EmergencyStabilizer</HediffDef>
+    </descriptionHyperlinks>
     <techLevel>Spacer</techLevel>
     <graphicData>
       <texPath>Things/Item/Health/HealthItem</texPath>
@@ -72,7 +77,6 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
       <li>Torso</li>
-      <li>Body</li>
     </appliedOnFixedBodyParts>
     <addsHediff>EmergencyStabilizer</addsHediff>
   </RecipeDef>
@@ -81,27 +85,24 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
 
 
   <HediffDef ParentName="DiseaseBase">
-    <defName>Cryptobiotic Lockdown</defName>
-    <label>cryptobiotic lockdown</label>
-    <labelNoun>cryptobiotic lockdown</labelNoun>
-    <description>All biological functions have been reduced to their lowest possible level outside of a cryptosleep pod. Without a cryptosleep pod to maintain this state, the body will begin to recover functionality within a few days.</description>
+    <defName>Cryptobiotic Stabilization</defName>
+    <label>stabilization</label>
+    <labelNoun>the effects of an activated stabilizer</labelNoun>
+        <description>The effects of an activated Emergency Stabilizer. Bleeding is slowed down for approximately half a day, after which the user will experience a four day recovery with severe penalties to higher level brain functions. This does not cause permanent damage.</description>
+    <descriptionShort>The effects of using an Emergency Stabilizer, slowing bleeding and diesease progression at a temporary cost of higher order brain functions</descriptionShort>
+    <initialSeverity>1.0</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.2</severityPerDay>
       </li>
+
+      <li Class="HediffCompProperties_Disappears">
+        <!-- Dissapears automatically after 5 days-->
+        <disappearsAfterTicks>300000~300000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
     </comps>
     <stages>
-      <li>
-      <minSeverity>.8</minSeverity>
-      <label>Activated</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.1</setMax>
-          </li>
-        </capMods>
-        <totalBleedFactor>0.1</totalBleedFactor>
-      </li>
       <li>
       <minSeverity>0</minSeverity>
       <label>Recovery</label>
@@ -111,11 +112,24 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
         <capMods>
         <li>
         <capacity>Consciousness</capacity>
-        <offset>-0.2</offset>
+        <postFactor>0.7</postFactor>
         </li>
         </capMods>
 
       </li>
+
+      <li>
+      <minSeverity>.8</minSeverity>
+      <label>Active</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+        <totalBleedFactor>0.1</totalBleedFactor>
+      </li>
+
     </stages>
   </HediffDef>
 
