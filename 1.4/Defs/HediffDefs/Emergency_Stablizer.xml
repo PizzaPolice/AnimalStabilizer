@@ -38,9 +38,6 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
     <statBases>
       <MarketValue>300</MarketValue>
     </statBases>
-    <thingCategories>
-      <li>BodyPartsBionic</li>
-    </thingCategories>
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>2</ComponentSpacer>
