@@ -1,4 +1,4 @@
-# Animal Stabilizer
+# Emergency Stabilizer
 
 A Mod for Rimworld that adds an implant that forces a pawn into a cryptosleep-like state when they reach critical condition, giving you more time to stop bleeding or respond to time-sensitve trauma.
   
