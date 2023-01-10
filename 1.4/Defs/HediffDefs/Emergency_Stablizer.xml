@@ -17,16 +17,15 @@
     </comps>
   </HediffDef>
 
-  <ThingDef ParentName="BodyPartBase">
+  <ThingDef ParentName="BodyPartBionicBase">
     <defName>EmergencyStabilizer</defName>
     <label>emergency stabilizer</label>
-    <description>A lifesaving implant that violently forces the body into a cryptobiotic state when the patient is incapacitated, shutting down or slowing all biological functions, and allowing more time to save the patient from disease or blood loss.
+    <description>A lifesaving implant that violently forces the body into a cryptobiotic state when the patient is incapacitated, slowing down blood flow and allowing more time to save the patient from their injuries.
 
-The shock of being forced into cryptosleep causes severe disruption in higher brain functions for a time afterwards. They are used primarily on non-sentient creatures for this reason. 
+The shock of being forced into cryptosleep causes severe disruption in higher order brain functions for a time afterwards. They are used primarily on non-sentient creatures for this reason. 
 
 On urbworlds, they are used mainly to prolong the lives of showfighting animals.</description>
     <descriptionHyperlinks>
-      <ThingDef>EmergencyStabilizer</ThingDef>
       <HediffDef>EmergencyStabilizer</HediffDef>
     </descriptionHyperlinks>
     <techLevel>Spacer</techLevel>
@@ -37,7 +36,7 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
       <color>(189,169,118)</color>
     </graphicData>
     <statBases>
-      <MarketValue>400</MarketValue>
+      <MarketValue>300</MarketValue>
     </statBases>
     <thingCategories>
       <li>BodyPartsBionic</li>
@@ -88,8 +87,12 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
     <defName>Cryptobiotic Stabilization</defName>
     <label>stabilization</label>
     <labelNoun>the effects of an activated stabilizer</labelNoun>
-        <description>The effects of an activated Emergency Stabilizer. Bleeding is slowed down for approximately half a day, after which the user will experience a four day recovery with severe penalties to higher level brain functions. This does not cause permanent damage.</description>
-    <descriptionShort>The effects of using an Emergency Stabilizer, slowing bleeding and diesease progression at a temporary cost of higher order brain functions</descriptionShort>
+    <description>The effects of an activated Emergency Stabilizer. Bleeding is slowed down for approximately half a day, after which the user will experience a five day recovery period with severe penalties to higher level brain functions.
+    
+    The stabilization process is stressful on the body and may cause death in the event user's consciousness drops too low.
+    
+    This effect does not cause permanent damage.</description>
+    <descriptionShort>The effects of using an Emergency Stabilizer, slowing bleeding at a temporary cost of higher order brain functions</descriptionShort>
     <initialSeverity>1.0</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
@@ -119,7 +122,7 @@ On urbworlds, they are used mainly to prolong the lives of showfighting animals.
       </li>
 
       <li>
-      <minSeverity>.8</minSeverity>
+      <minSeverity>.9</minSeverity>
       <label>Active</label>
         <capMods>
           <li>
