@@ -1,11 +1,12 @@
 <ModMetaData>
   <author>PizzaPolice</author>
-  <name>[1.4] Emergency Stabilizer</name>
+  <name>Emergency Stabilizer</name>
   <description>Adds an implant that forces a pawn into a cryptosleep-like state when they reach critical condition, giving you more time to stop bleeding or respond to time-sensitve trauma. 
   
-  Primarily meant for animals, so you don't have to play Trauma Team on Emergency mode every time your tank animals get downed. It has a number of cognitive consequences when you use it on a sapient pawn.
+Primarily meant for animals, so you don't have to play Trauma Team on Emergency mode every time your combat animals get downed. It has a number of cognitive consequences when used on a sapient pawn.
   
-  Flavor text by Saito Yui. </description>
+Flavor text and proofreading by Saito Yui.
+  </description>
   <supportedVersions>
       <li>1.4</li>
   </supportedVersions>
