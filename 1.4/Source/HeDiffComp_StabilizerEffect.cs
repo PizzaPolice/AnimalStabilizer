@@ -17,23 +17,21 @@ namespace AnimalStabilizer
             if(Find.TickManager.TicksGame % 250 != 0) {
                 return;
             }
-
+            
+            //Do not re-apply stabilization effect if already present
             if (Pawn.health.hediffSet.GetFirstHediffOfDef(stabilization) != null) {
-                Log.Error("FOUND STABLIIZATION ALREADY");
                 return;
             }
 
+            //Only apply if pawn is downed
             if (!Pawn.Downed) {
-                Log.Error("PAWN NOT DOWNED YET");
                 return;
             }
 
+            //And pawn is at most 12 hours from bleeding to death
             if (HealthUtility.TicksUntilDeathDueToBloodLoss(Pawn) < Props.BleedToDeathTicksActivationThreshold) {
                 Pawn.health.AddHediff(stabilization);
-                Log.Error("MAN DOWN MAN DOWN");
-            } 
-                
-           
+            }
 
         }
     }
